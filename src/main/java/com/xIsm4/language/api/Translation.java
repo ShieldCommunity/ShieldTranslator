@@ -1,4 +1,4 @@
-package com.azoraqua.language.api;
+package com.xIsm4.language.api;
 
 import java.util.*;
 import java.util.regex.Matcher;

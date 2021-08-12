@@ -1,7 +1,7 @@
-package com.azoraqua.language.api.test;
+package com.xIsm4.language.api.test;
 
-import com.azoraqua.language.api.LanguageAPI;
-import com.azoraqua.language.api.TranslationSet;
+import com.xIsm4.language.api.LanguageAPI;
+import com.xIsm4.language.api.TranslationSet;
 import org.junit.jupiter.api.*;
 
 import java.util.Locale;
@@ -16,6 +16,9 @@ public final class LanguageTests {
     @Test
     public void test_retrieve_translation_set() {
        translationSet = LanguageAPI.getTranslations(Locale.forLanguageTag("example"));
+       test_retrieve_translations();
+       test_message_contains_placeholder();
+       System.out.println("Maybe");
 
         Assertions.assertNotNull(translationSet);
     }
@@ -37,6 +40,7 @@ public final class LanguageTests {
     @Test
     public void test_message_correct() {
         Assertions.assertEquals("Hello {who}!", translationSet.getTranslation("hello").getMessage());
+        Assertions.assertEquals("Hola {quien}",translationSet.getTranslation("hola").getMessage());
     }
 
     @Order(5)

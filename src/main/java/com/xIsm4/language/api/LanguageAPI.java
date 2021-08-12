@@ -1,4 +1,4 @@
-package com.azoraqua.language.api;
+package com.xIsm4.language.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -47,6 +47,7 @@ public final class LanguageAPI {
                 }
             } catch (FileNotFoundException | URISyntaxException | NullPointerException e) {
                 throw new IllegalStateException("Could not load internal file.");
+                //Trow exception
             }
         }
 

@@ -1,3 +1,4 @@
 {
-    "hello": "Hello {who}!"
+    "hello": "Hello {who}!",
+    "hola": "Hola {quien}"
 }
