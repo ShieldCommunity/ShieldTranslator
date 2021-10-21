@@ -1,2 +1,2 @@
 ## root@LanguageAPI/Forked
-A simple API to simplify internationalisation.
+Proyecto de clase (Traducir lenguajes/Implementando Async-Gradle=
