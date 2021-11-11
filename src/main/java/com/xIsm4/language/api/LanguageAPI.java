@@ -2,6 +2,8 @@ package com.xIsm4.language.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import com.xIsm4.language.api.translations.Translation;
+import com.xIsm4.language.api.translations.TranslationSet;
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -28,7 +30,7 @@ public final class LanguageAPI {
             translationSets.putIfAbsent(locale, translationSet);
         }
 
-        return translationSet = translationSets.get(locale);
+        return translationSets.get(locale);
     }
 
     public static TranslationSet getDefaultTranslations() {

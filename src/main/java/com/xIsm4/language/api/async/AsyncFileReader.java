@@ -1,11 +1,11 @@
-package com.xIsm4.language.api;
+package com.xIsm4.language.api.async;
 
 import java.io.IOException;
 import java.nio.channels.AsynchronousFileChannel;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-public class AsyncXLS {
+public class AsyncFileReader {
 
     private Object LanguageAPI;
     AsynchronousFileChannel asyncFileChannel = AsynchronousFileChannel.open((Path) LanguageAPI, StandardOpenOption.WRITE);
@@ -14,7 +14,8 @@ public class AsyncXLS {
         return asyncFileChannel;
     }
 
-    public AsyncXLS() throws IOException {
+    public AsyncFileReader(Object languageAPI) throws IOException {
+        LanguageAPI = languageAPI;
     }
 
 }

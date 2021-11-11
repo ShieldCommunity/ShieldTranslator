@@ -1,7 +1,7 @@
 package com.xIsm4.language.api.test;
 
 import com.xIsm4.language.api.LanguageAPI;
-import com.xIsm4.language.api.TranslationSet;
+import com.xIsm4.language.api.translations.TranslationSet;
 import org.junit.jupiter.api.*;
 
 import java.util.Locale;
@@ -40,7 +40,11 @@ public final class LanguageTests {
     @Test
     public void test_message_correct() {
         Assertions.assertEquals("Hello {who}!", translationSet.getTranslation("hello").getMessage());
+        /*
+        Not really needed? actually just a example, ill keep it on read-only to spanish guys.
         Assertions.assertEquals("Hola {quien}",translationSet.getTranslation("hola").getMessage());
+
+         */
     }
 
     @Order(5)

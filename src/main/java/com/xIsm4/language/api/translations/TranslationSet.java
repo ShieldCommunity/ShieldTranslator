@@ -1,6 +1,9 @@
-package com.xIsm4.language.api;
+package com.xIsm4.language.api.translations;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public final class TranslationSet {
 
