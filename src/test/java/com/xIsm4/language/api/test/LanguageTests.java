@@ -41,7 +41,7 @@ public final class LanguageTests {
     public void test_message_correct() {
         Assertions.assertEquals("Hello {who}!", translationSet.getTranslation("hello").getMessage());
         /*
-        Not really needed? actually just a example, ill keep it on read-only to spanish guys.
+        Not really needed? actually just an example, ill keep it on read-only to spanish guys.
         Assertions.assertEquals("Hola {quien}",translationSet.getTranslation("hola").getMessage());
 
          */

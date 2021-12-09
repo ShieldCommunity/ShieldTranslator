@@ -23,7 +23,7 @@ public final class LanguageAPI {
             locale = Locale.getDefault();
         }
 
-        TranslationSet translationSet = null;
+        TranslationSet translationSet;
 
         if (!translationSets.containsKey(locale)) {
             translationSet = LanguageAPI.loadTranslations(locale);

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public final class Translation {
 
-    private static final Pattern PLACEHOLDER_PATTERN = Pattern.compile("(\\{[a-zA-Z][a-zA-Z0-9_-]+\\})");
+    private static final Pattern PLACEHOLDER_PATTERN = Pattern.compile("(\\{[a-zA-Z][a-zA-Z0-9_-]+})");
     private final String key;
     private final String message;
 
