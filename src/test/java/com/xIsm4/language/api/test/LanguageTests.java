@@ -51,5 +51,12 @@ public final class LanguageTests {
     @Test
     public void test_message_contains_placeholder() {
         Assertions.assertTrue( translationSet.getTranslation("hello").getPlaceholders().contains("{who}"));
+        if(translationSet.getTranslations().contains("hola")) {
+            try {
+                Assertions.assertTrue(translationSet.getTranslation("hola").getPlaceholders().contains("{quien}"));
+            } catch (Exception e) {
+                    Assertions.fail("Translation not found");
+                }
+            }
+        }
     }
-}
